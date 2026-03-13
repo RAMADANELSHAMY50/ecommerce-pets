@@ -408,6 +408,19 @@ nav{
         p{
             width: 300px;
         }
+
+        .btn{
+            button{
+                width: 151px;
+            }
+    
+            #view{
+                width: 153px;
+                
+            }
+
+        }
+
     
 }}
 
@@ -762,17 +775,29 @@ main{
         width: 100%;
     
     .hero2{
-        height: 678px;
+      
 
     
         .title-content{
-            
-            left: 10px;
+            left: 15px;
            
                 }
         
             }
+
+            .btn{
+
+        
+                button{
+                    width: 151px;
+                }
+        
+                #view{
+                    width: 151px;
+
+                }
        }     
+}
 }
 
 .cards{
@@ -1380,7 +1405,12 @@ footer{
             flex-direction: column;
             gap: 20px;
 
+            .footer-links{
+                display: flex;
+                gap: 20px;
+            }
         }
+
 
         .nav-logo{
            flex-direction: column;
