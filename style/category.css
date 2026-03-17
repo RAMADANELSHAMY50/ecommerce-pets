@@ -323,6 +323,13 @@ main {
       gap: 20px;
 
       .filter {
+        h3{
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 36px;
+          color: #003459;
+          margin-bottom: 14px;
+        }
         .filter-section {
             display: flex;
             flex-direction: column;
@@ -330,6 +337,18 @@ main {
 
           h3 {
             font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            color: #00171f;
+            margin-bottom: 12px;
+          }
+
+          label{
+            font-size: 14px;
+            font-weight: 20px;
+            line-height: 20px;
+            color: #00171f;
+            margin-bottom: 8px;
           }
 
           .checkbox-label {
