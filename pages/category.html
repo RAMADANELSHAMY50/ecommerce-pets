@@ -9,13 +9,15 @@
     <body>
         <nav>
             <div class="nav-bar">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                <button onclick="toggleNav()" ><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                    height="24"
                     viewBox="0 0 24 24" id="menu"><path fill="currentColor"
-                        d="M4 18q-.425 0-.712-.288T3 17t.288-.712T4 16h16q.425 0 .713.288T21 17t-.288.713T20 18zm0-5q-.425 0-.712-.288T3 12t.288-.712T4 11h16q.425 0 .713.288T21 12t-.288.713T20 13zm0-5q-.425 0-.712-.288T3 7t.288-.712T4 6h16q.425 0 .713.288T21 7t-.288.713T20 8z" /></svg>
+                        d="M4 18q-.425 0-.712-.288T3 17t.288-.712T4 16h16q.425 0 .713.288T21 17t-.288.713T20 18zm0-5q-.425 0-.712-.288T3 12t.288-.712T4 11h16q.425 0 .713.288T21
+                         12t-.288.713T20 13zm0-5q-.425 0-.712-.288T3 7t.288-.712T4 6h16q.425 0 .713.288T21 7t-.288.713T20 8z" /></svg></button>
                 <div class="logo">
                     <img src="../images/logo.png" alt>
                 </div>
-                <div class="nav-links">
+                <div class="nav-links" id="nav-links">
                     <a href="../pages/home.html">home</a>
                     <a href="#">category</a>
                     <a href="">about</a>
@@ -23,7 +25,7 @@
                 </div>
                 <div class="search">
                     <input type="text" placeholder="Search something here!">
-                    <button>Join the community </button>
+                    <button> Join the community </button>
 
                 </div>
                 <div class="property">
@@ -153,7 +155,7 @@
                                 <p>52 puppies</p>
                             </div>
                             <div class="btn">
-                                <button>view more <span>></span> </button>
+                                <button> Sort by: Popular <span>></span> </button>
                             </div>
                         </div>
                         <div class="cards">
@@ -349,5 +351,15 @@
                 </div>
             </div>
         </footer>
+         <script> 
+            function toggleNav() {
+  const nav = document.getElementById('nav-links');
+  if (nav.style.display === 'none') {
+    nav.style.display = 'flex';
+  } else {
+    nav.style.display = 'none';
+  }
+}
+        </script>
     </body>
 </html>

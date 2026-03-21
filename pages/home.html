@@ -9,16 +9,18 @@
     <body>
         <nav>
             <div class="nav-bar">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                <button onclick="toggleNav()" ><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                    height="24"
                     viewBox="0 0 24 24" id="menu"><path fill="currentColor"
-                        d="M4 18q-.425 0-.712-.288T3 17t.288-.712T4 16h16q.425 0 .713.288T21 17t-.288.713T20 18zm0-5q-.425 0-.712-.288T3 12t.288-.712T4 11h16q.425 0 .713.288T21 12t-.288.713T20 13zm0-5q-.425 0-.712-.288T3 7t.288-.712T4 6h16q.425 0 .713.288T21 7t-.288.713T20 8z" /></svg>
+                        d="M4 18q-.425 0-.712-.288T3 17t.288-.712T4 16h16q.425 0 .713.288T21 17t-.288.713T20 18zm0-5q-.425 0-.712-.288T3 12t.288-.712T4 11h16q.425 0 .713.288T21
+                         12t-.288.713T20 13zm0-5q-.425 0-.712-.288T3 7t.288-.712T4 6h16q.425 0 .713.288T21 7t-.288.713T20 8z" /></svg></button>
                 <div class="logo">
                     <img src="../images/logo.png" alt>
                 </div>
-                <div class="nav-links">
+                <div class="nav-links" id="nav-links">
                     <a href="#">home</a>
                     <a href="../pages/category.html">category</a>
-                    <a href="">about</a>
+                    <a href>about</a>
                     <a href="../pages/product-detail.html">contact</a>
                 </div>
                 <div class="search">
@@ -48,7 +50,7 @@
             <div id="d8"></div>
             <div id="d9"><img src="../images/bg-hero.png" alt></div>
         </nav>
-  
+
         <section class="hero1">
             <h1>One more friend</h1>
             <h3>Thousands more fun!</h3>
@@ -179,9 +181,9 @@
                                 <circle cx="12" cy="12" r="10" stroke="#0d3b66"
                                     stroke-width="2" fill="none" />
                                 <polygon points="10,8 16,12 10,16"
-                                    fill="#0d3b66" /></svg>  </button>
+                                    fill="#0d3b66" /></svg> </button>
                         <button id="Explore">Explore Now</button>
-                        
+
                     </div>
 
                 </div>
@@ -300,7 +302,7 @@
                     </div>
                 </div>
             </div>
-        </cards> 
+        </cards>
         <hero3>
             <div class="hero3">
                 <div class="sellers">
@@ -343,7 +345,7 @@
 
                 </div>
             </div>
-        </hero3> 
+        </hero3>
         <article>
             <div class="card">
                 <div class="heads-product">
@@ -393,8 +395,8 @@
                     </div>
                 </div>
             </div>
-        </article> 
- 
+        </article>
+
         <footer>
 
             <div class="head">
@@ -409,16 +411,17 @@
                 </div>
                 <div class="nav">
                     <div class="footer-links">
-                        <a href>home</a>
-                        <a href>category</a>
+                        <a href="#">home</a>
+                        <a href="../pages/category.html">category</a>
                         <a href>about</a>
-                        <a href>contact</a>
+                        <a href="../pages/product-detail.html">contact</a>
                     </div>
                     <div class="footer-icons">
-                        <a href=""><img src="../images/icons/Group.png" alt=""></a>
-                        <a href=""><img src="../images/icons/Lozenge.png" alt=""></a>
-                        <a href=""><img src="../images/icons/Vector (1).png" alt=""></a>
-                        <a href=""><img src="../images/icons/Vector.png" alt=""></a>
+                        <a href><img src="../images/icons/Group.png" alt></a>
+                        <a href><img src="../images/icons/Lozenge.png" alt></a>
+                        <a href><img src="../images/icons/Vector (1).png"
+                                alt></a>
+                        <a href><img src="../images/icons/Vector.png" alt></a>
                     </div>
                 </div>
                 <hr>
@@ -428,7 +431,18 @@
                     <p>Terms of Service <span> Privacy Policy</span></p>
                 </div>
             </div>
-        </footer> 
+        </footer>
+
+        <script> 
+            function toggleNav() {
+  const nav = document.getElementById('nav-links');
+  if (nav.style.display === 'none') {
+    nav.style.display = 'flex';
+  } else {
+    nav.style.display = 'none';
+  }
+}
+        </script>
 
     </body>
 </html>
