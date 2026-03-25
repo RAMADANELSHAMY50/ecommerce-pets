@@ -4,6 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../style/product-detial.css">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
         <title>product-detail</title>
     </head>
     <body>
@@ -44,7 +46,37 @@
 
         <section class="contact">
             <div class="left">
-                <img src="../images/slider-product/slider1.png" alt="slider">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img
+                                src="../images/slider-product/slider.png"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                                src="../images/slider-product/slider2.png"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                                src="../images/slider-product/slider4.png"
+                                class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button"
+                        data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"
+                            aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button"
+                        data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"
+                            aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
                 <button onclick="window.location.href='../pages/home.html'"> >
                 </button>
                 <div class="images-slider">
@@ -61,6 +93,7 @@
                             alt="slider">
                         <img src="../images/slider-product/slider5.png"
                             alt="slider">
+    
                     </div>
                 </div>
                 <p><span><img src="../images/icons/Frame (1).png" alt>100%
@@ -224,5 +257,8 @@
                 </div>
             </div>
         </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
     </body>
 </html>
